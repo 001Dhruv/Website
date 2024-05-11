@@ -4,222 +4,309 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Your Website Title</title>
-    <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link href="./css/Index.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/css/intlTelInput.css" asp-append-version="true" />
 
+    <link rel="stylesheet" href="assets/css/styles.css">
+
+    <!-- =====BOX ICONS===== -->
+    <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <title>Website</title>
 </head>
 
 <body>
-    <!--Navbar-->
-    <nav class="navbar navbar-expand-lg navbar-light w-100 shadow-none p-3 " id="navbar">
-        <div class="container-fluid" id="navbar-list">
-            <a class="navbar-brand animate-pop-up" href="#">
-                <img class="w-75 h-100 logo_img" src="https://www.digitalvyapaar.com/assets/img/logo.png" alt="">
-            </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-                </button>
-        </div>
-        <div class="collapse navbar-collapse px-4" id="navbarNav">
-            <ul class="navbar-nav ml-auto text-nowrap">
-                <li class="nav-item  animate-pop-up">
-                    <a class="nav-link" href="#">Home</a>
-                </li>
-                <li class="nav-item animate-pop-up">
-                    <a class="nav-link" href="#hero_section_2">About</a>
-                </li>
-                <li class="nav-item animate-pop-up">
-                    <a class="nav-link" href="#hero_section_3">Services</a>
-                </li>
-                <li class="nav-item animate-pop-up">
-                    <a class="nav-link" href="#hero_section_4">Contact us</a>
-                </li>
-            </ul>
-        </div>
-    </nav>
-    <!--Navbar-->
-
-    <!-- Main Content Section -->
-    <main class="container-fluid" id="main_section">
-        <div class="row align-items-center min-vh-100" id="hero_section">
-            <div class="col-md-6 col-sm-6 px-5 text-center animate-pop-up">
-                <p class="animate-pop-up fw-bold fs-1">Digital Services Provider</p>
-                <p class="animate-pop-up">We belive in excellence</p>
-                <a href="#hero_section_2" class="btn btn-primary btn-lg animate-pop-up ">Get Started</a>
-            </div>
-            <div class="col-md-6 col-sm-6 py-4 text-center animate-pop-up">  
-                <img class="w-75 h-100" src="./assets/home_image.svg" alt="">
-            </div>
-        </div>
-        <div class="row align-items-center min-vh-100" id="hero_section_2">
-            <div class="col-md-6 py-4 text-center animate-pop-up zoom-effect">
-                <img class="w-75 h-" src="./assets/home_image_2.svg" alt="">
-            </div>
-            <div class="col-md-6 px-5 text-left animate-pop-up">
-                <h1 class="py-2 animate-pop-up">Digital Vyapaar</h1>
-                <p class="py-2 pe-4 animate-pop-up">
-                    Since our establishment in 2021, Digital Vyapaar has been the best software development and digital marketing company, specializing in website design, website development, Facebook Ads, Google Ads, search engine optimization & graphic design, pay-per-click
-                    marketing, social media marketing, Google Maps listing, and more. At Digital Vyapaar, we strive to make your time with us as joyful as possible. Our objective is to constantly provide effective and professional results while maintaining
-                    our creative and visionary vision. We strive to go above and beyond your expectations. We are a digital marketing agency that believes in working together to produce effective results with content & strategies for our customers, who
-                    are always one step ahead of the competition while working with us. We have specialists that are focused on achieving results when it comes to establishing an online brand presence. We collaborate in remote teams throughout the world
-                    while staying in touch with you on a local level. From market research and analysis to branding, identity, and communications, to website and eCommerce site building, inbound, content, and social media marketing, and video and webinars,
-                    we provide creative and strategic services.</p>
+    <!--===== HEADER =====-->
+    <header class="l-header">
+        <nav class="nav bd-grid">
+            <div>
+                <a href="#" class="nav__logo">
+                    <img src="/assets/img/horizontal.png" width="180" />
+                </a>
             </div>
 
-        </div>
-        <div class="row  gy-5 py-5 justify-content-center min-vh-100" id="hero_section_3">
-            <h1 class="text-center animate-pop-up">Our Services</h1>
-            <div class="col-md-4 d-flex justify-content-center">
-                <div class="card animate-pop-up" style="width: 18rem;">
-                    <img src="..." class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">Card title</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.
-                        </p>
-                        <a href="#" class="btn btn-primary">Go somewhere</a>
-                    </div>
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <li class="nav__item"><a href="#home" class="nav__link active-link">Home</a></li>
+                    <li class="nav__item"><a href="#about" class="nav__link">About</a></li>
+                    <li class="nav__item"><a href="#skills" class="nav__link">Skills</a></li>
+                    <li class="nav__item"><a href="#work" class="nav__link">Services</a></li>
+                    <li class="nav__item"><a href="#contact" class="nav__link">Contact</a></li>
+                </ul>
+            </div>
+
+            <div class="nav__toggle" id="nav-toggle">
+                <i class='bx bx-menu'></i>
+            </div>
+        </nav>
+    </header>
+
+    <main class="l-main">
+        <!--===== HOME =====-->
+        <section class="home bd-grid" id="home">
+            <div class="home__data">
+                <h1 class="home__title">Hi,We're <br><span class="home__title-color">Digital Service <br>Provider</span></h1>
+
+                <a href="#" class="button">Contact</a>
+            </div>
+
+            <div class="home__social">
+                <a href="" class="home__social-icon"><i class='bx bxl-linkedin'></i></a>
+                <a href="" class="home__social-icon"><i class='bx bxl-behance' ></i></a>
+                <a href="" class="home__social-icon"><i class='bx bxl-github' ></i></a>
+            </div>
+
+            <div class="home__img">
+                <svg class="home__blob" viewBox="0 0 479 467" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                        <mask id="mask0" mask-type="alpha">
+                            <path d="M9.19024 145.964C34.0253 76.5814 114.865 54.7299 184.111 29.4823C245.804 6.98884 311.86 -14.9503 370.735 14.143C431.207 44.026 467.948 107.508 477.191 174.311C485.897 237.229 454.931 294.377 416.506 344.954C373.74 401.245 326.068 462.801 255.442 466.189C179.416 469.835 111.552 422.137 65.1576 361.805C17.4835 299.81 -17.1617 219.583 9.19024 145.964Z"/>
+                        </mask>
+                        <g mask="url(#mask0)">
+                            <path d="M9.19024 145.964C34.0253 76.5814 114.865 54.7299 184.111 29.4823C245.804 6.98884 311.86 -14.9503 370.735 14.143C431.207 44.026 467.948 107.508 477.191 174.311C485.897 237.229 454.931 294.377 416.506 344.954C373.74 401.245 326.068 462.801 255.442 466.189C179.416 469.835 111.552 422.137 65.1576 361.805C17.4835 299.81 -17.1617 219.583 9.19024 145.964Z"/>
+                            <image class="home__blob-img" x="50" y="60" href="assets/img/home_image.svg"/>
+                        </g>
+                    </svg>
+            </div>
+        </section>
+
+        <!--===== ABOUT =====-->
+        <section class="about section " id="about">
+            <h2 class="section-title">About</h2>
+
+            <div class="about__container bd-grid">
+                <div class="about__img">
+                    <img src="assets/img/home_image_2.svg" alt="">
+                </div>
+
+                <div>
+                    <h2 class="about__subtitle">Digital Sphere</h2>
+                    <p class="about__text">ompanyName has emerged as a leading provider of software development and digital marketing solutions. Our expertise spans across various domains including website design and development, mobile app design and development, Facebook
+                        Ads, Google Ads, social media marketing, Google Maps listing, and more. At companyName, we prioritize ensuring your experience with us is not just satisfactory but delightful. Our mission is to consistently deliver professional
+                        and impactful outcomes while nurturing our innovative vision. We are committed to surpassing your expectations by fostering collaboration and employing creative strategies. With a wide network of specialists, we work seamlessly
+                        to elevate your online brand presence. From market research to branding, web development to content marketing, we offer comprehensive services tailored to your needs. Our remote teams are adept at staying connected with you, ensuring
+                        effective communication and results-driven solutions.
+                    </p>
                 </div>
             </div>
-            <div class="col-md-4 d-flex justify-content-center">
-                <div class="card animate-pop-up " style="width: 18rem;">
-                    <img src="..." class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">Card title</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.
-                        </p>
-                        <a href="#" class="btn btn-primary">Go somewhere</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4 d-flex justify-content-center">
-                <div class="card animate-pop-up"" style="width: 18rem;">
-                    <img src="..." class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">Card title</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.
-                        </p>
-                        <a href="#" class="btn btn-primary">Go somewhere</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4 d-flex justify-content-center">
-                <div class="card animate-pop-up"" style="width: 18rem;">
-                    <img src="..." class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">Card title</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.
-                        </p>
-                        <a href="#" class="btn btn-primary">Go somewhere</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4 d-flex justify-content-center">
-                <div class="card animate-pop-up"" style="width: 18rem;">
-                    <img src="..." class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">Card title</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.
-                        </p>
-                        <a href="#" class="btn btn-primary">Go somewhere</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="row" id="hero_section_4">
-            <div class="container shadow rounded p-4 justify-content-around d-flex  w-75  h-75 animate-pop-up" id="contact_us_form">
-                <div class="row align-items-center">
-                    <div class="col-md-6 text-left">
-                        <div class="my-5 h1">Have Question? Write a Message</div>
-                        <div class="row d-flex">
-                            <div class="col-md-6 py-2">
-                                <div class="form-group d-flex align-items-center rounded">
-                                    <input type="text" class="form-control" placeholder=""><span>Name</span>
-                                </div>
-                            </div>
-                            <div class="col-md-6 py-2">
-                                <div class="telephone rounded">
-                                    <div class="input-group d-flex align-items-center rounded ">
-                                        <input type="tel" class="form-control">
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-6 py-2">
-                                <div class="form-group d-flex align-items-center rounded">
-                                    <input type="email" class="form-control" placeholder=""><span>Email Address</span>
-                                </div>
-                            </div>
-                            <div class="col-md-6 py-2">
-                                <div class="form-group d-flex align-items-center rounded">
-                                    <input type="text" class="form-control" placeholder=""><span>Subject</span>
-                                </div>
-                            </div>
-                            <div class="col-md-12 py-2">
-                                <div class="form-group d-flex align-items-center rounded">
-                                    <textarea class="form-control" placeholder="" id="" rows="3"></textarea>
-                                    <span>Leave a message here</span>
-                                </div>
-                            </div>
-                            <div class="d-flex justify-content-end py-2">
-                                <a href="#" class="btn btn-primary">Submit</a>
-                            </div>
-                            </form>
+        </section>
+
+        <!--===== SKILLS =====-->
+        <section class="skills section" id="skills">
+            <h2 class="section-title">Skills</h2>
+
+            <div class="skills__container bd-grid">
+                <div>
+                    <h2 class="skills__subtitle">Profesional Skills</h2>
+                    <p class="skills__text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Velit optio id vero amet, alias architecto consectetur error eum eaque sit.</p>
+                    <div class="skills__data">
+                        <div class="skills__names">
+                            <i class='bx bxl-html5 skills__icon'></i>
+                            <span class="skills__name">HTML5</span>
+                        </div>
+                        <div class="skills__bar skills__html">
+
+                        </div>
+                        <div>
+                            <span class="skills__percentage">95%</span>
                         </div>
                     </div>
-                    <div class="col-md-6 py-4 text-center">
-                        <img class="w-75 h-100" src="./assets/contact_image.svg" alt="">
+                    <div class="skills__data">
+                        <div class="skills__names">
+                            <i class='bx bxl-css3 skills__icon'></i>
+                            <span class="skills__name">CSS3</span>
+                        </div>
+                        <div class="skills__bar skills__css">
+
+                        </div>
+                        <div>
+                            <span class="skills__percentage">85%</span>
+                        </div>
+                    </div>
+                    <div class="skills__data">
+                        <div class="skills__names">
+                            <i class='bx bxl-javascript skills__icon'></i>
+                            <span class="skills__name">JAVASCRIPT</span>
+                        </div>
+                        <div class="skills__bar skills__js">
+
+                        </div>
+                        <div>
+                            <span class="skills__percentage">65%</span>
+                        </div>
+                    </div>
+                    <div class="skills__data">
+                        <div class="skills__names">
+                            <i class='bx bxs-paint skills__icon'></i>
+                            <span class="skills__name">UX/UI</span>
+                        </div>
+                        <div class="skills__bar skills__ux">
+
+                        </div>
+                        <div>
+                            <span class="skills__percentage">85%</span>
+                        </div>
                     </div>
                 </div>
-            </div>
-        </div>
-    </main>
-    <hr>
-    <!-- Footer Section -->
-    <footer class="footer_section" id="footer_section">
-        <div class="container">
-            <div class="row px-3">
-                <div class="col-md-4 py-4">
-                    <h2>Contact Us</h2>
-                    <ul class="list-unstyled ms-1">
-                        <li><a href="">Email :</a></li>
-                        <li><a href="">Contact No. :</a></li>
-                    </ul>
-                </div>
-                <div class="col-md-4 py-4 ">
-                    <h2>Quick Links</h2>
-                    <ul class="list-unstyled ms-1">
-                        <li><a href="#">Home</a></li>
-                        <li><a href="#hero_section_2">About</a></li>
-                        <li><a href="#hero_section_3">Services</a></li>
-                        <li><a href="#hero_section_4">Contact Us</a></li>
-                    </ul>
-                </div>
-                <div class="col-md-4 py-4 ">
-                    <h2>Our Services</h2>
-                    <ul class="list-unstyled ms-1">
-                        <li><a href="#hero_section_3">Services</a></li>
-                        <li><a href="#hero_section_3">Services</a></li>
-                        <li><a href="#hero_section_3">Services</a></li>
-                        <li><a href="#hero_section_3">Services</a></li>
-                        <li><a href="#hero_section_3">Services</a></li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-        <hr>
-        <div class="text-center bg-black text-white p-4">
-            <p>Copyright © 2024 Web site. All rights reserved.</p>
-        </div>
-    </footer>
-    <!-- Bootstrap JS (Required) -->
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-</body>
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/intlTelInput.min.js"></script>
-<script src="js/index.js"></script>
+                <div>
+                    <img src="assets/img/work3.jpg" alt="" class="skills__img">
+                </div>
+            </div>
+        </section>
+
+        <!--===== WORK =====-->
+        <section class="work section" id="work">
+            <h2 class="section-title">Service</h2>
+
+            <div class="work__container bd-grid">
+                <div class="position-relative work__img">
+                    <div href="" class="">
+                        <img src="assets/img/work1.jpg" alt="">
+                    </div>
+                    <div class="position-absolute  w-100 h-100 top-0 bottom-0 p-2 work_title">
+                        <div class="rounded w-100 h-100 d-flex justify-content-center align-items-center text-center border-orange" style="border-color: #f4b43e !important;">
+                            <span class="mb-0 text-orange h4 ">
+                                Website development
+                            </span>
+                        </div>
+                    </div>
+                    <div class="position-absolute  w-100 h-100 top-0 bottom-0 p-2 work_description">
+                        <div class="rounded w-100 h-100 d-flex justify-content-center align-items-center text-center border-orange" style="border-color: #f4b43e !important;">
+                            <span class="mb-0 text-orange h6">
+                                Our expert team of designers and developers crafts visually stunning and user-friendly websites that captivate your audience and drive engagement.
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="position-relative work__img">
+                    <div href="" class="">
+                        <img src="assets/img/work2.jpg" alt="">
+                    </div>
+                    <div class="position-absolute  w-100 h-100 top-0 bottom-0 p-2 work_title">
+                        <div class="rounded w-100 h-100 d-flex justify-content-center align-items-center text-center border-orange" style="border-color: #f4b43e !important;">
+                            <span class="mb-0 text-orange h4 ">
+                                Mobile app development
+                            </span>
+                        </div>
+                    </div>
+                    <div class="position-absolute  w-100 h-100 top-0 bottom-0 p-2 work_description">
+                        <div class="rounded w-100 h-100 d-flex justify-content-center align-items-center text-center border-orange" style="border-color: #f4b43e !important;">
+                            <span class="mb-0 text-orange h6">
+                                Stay ahead of the curve with our cutting-edge Android app development services. We create intuitive and feature-rich mobile applications that provide seamless user experiences and drive business growth.
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="position-relative work__img">
+                    <div href="" class="">
+                        <img src="assets/img/work3.jpg" alt="">
+                    </div>
+                    <div class="position-absolute  w-100 h-100 top-0 bottom-0 p-2 work_title">
+                        <div class="rounded w-100 h-100 d-flex justify-content-center align-items-center text-center border-orange" style="border-color: #f4b43e !important;">
+                            <span class="mb-0 text-orange h4 ">
+                                Digital marketing solutions
+                            </span>
+                        </div>
+                    </div>
+                    <div class="position-absolute  w-100 h-100 top-0 bottom-0 p-2 work_description">
+                        <div class="rounded w-100 h-100 d-flex justify-content-center align-items-center text-center border-orange" style="border-color: #f4b43e !important;">
+                            <span class="mb-0 text-orange h6">
+                                From Facebook Ads to Google Ads, SEO to PPC marketing, we deploy targeted strategies to enhance your brand visibility, attract leads, and maximize conversions.
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="position-relative work__img">
+                    <div href="" class="">
+                        <img src="assets/img/work4.jpg" alt="">
+                    </div>
+                    <div class="position-absolute  w-100 h-100 top-0 bottom-0 p-2 work_title">
+                        <div class="rounded w-100 h-100 d-flex justify-content-center align-items-center text-center border-orange" style="border-color: #f4b43e !important;">
+                            <span class="mb-0 text-orange h4 ">
+                                SEO
+                            </span>
+                        </div>
+                    </div>
+                    <div class="position-absolute  w-100 h-100 top-0 bottom-0 p-2 work_description">
+                        <div class="rounded w-100 h-100 d-flex justify-content-center align-items-center text-center border-orange" style="border-color: #f4b43e !important;">
+                            <span class="mb-0 text-orange h6">
+                                Boosting your website's visibility and ranking on search engine results pages. Our tailored SEO strategies drive organic traffic, enhance brand visibility, and increase conversions.
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="position-relative work__img">
+                    <div href="" class="">
+                        <img src="assets/img/work5.jpg" alt="">
+                    </div>
+                    <div class="position-absolute  w-100 h-100 top-0 bottom-0 p-2 work_title">
+                        <div class="rounded w-100 h-100 d-flex justify-content-center align-items-center text-center border-orange" style="border-color: #f4b43e !important;">
+                            <span class="mb-0 text-orange h4 ">
+                                Google Maps Listing
+                            </span>
+                        </div>
+                    </div>
+                    <div class="position-absolute  w-100 h-100 top-0 bottom-0 p-2 work_description">
+                        <div class="rounded w-100 h-100 d-flex justify-content-center align-items-center text-center border-orange" style="border-color: #f4b43e !important;">
+                            <span class="mb-0 text-orange h6">
+                                Putting your business on the map—literally. We optimize your Google Maps listing to ensure your business is easily discoverable by local customers, driving foot traffic and leads.
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <!-- <div class="position-relative work__img">
+                    <div href="" class="">
+                        <img src="assets/img/work6.jpg" alt="">
+                    </div>
+                    <div class="position-absolute  w-100 h-100 top-0 bottom-0 p-2 work_title">
+                        <div class="rounded w-100 h-100 d-flex justify-content-center align-items-center text-center border-orange" style="border-color: #f4b43e !important;">
+                            <span class="mb-0 text-orange h4 ">
+                                Generate sitemap for crowler and for audience.
+                            </span>
+                        </div>
+                    </div>
+                    <div class="position-absolute  w-100 h-100 top-0 bottom-0 p-2 work_description">
+                        <div class="rounded w-100 h-100 d-flex justify-content-center align-items-center text-center border-orange" style="border-color: #f4b43e !important;">
+                            <span class="mb-0 text-orange h6">
+                                Our expert team of designers and developers crafts visually stunning and user-friendly websites that captivate your audience and drive engagement.
+                            </span>
+                        </div>
+                    </div>
+                </div> -->
+            </div>
+        </section>
+
+        <!--===== CONTACT =====-->
+        <section class="contact section" id="contact">
+            <h2 class="section-title">Contact</h2>
+
+            <div class="contact__container bd-grid">
+                <form action="" class="contact__form">
+                    <input type="text" placeholder="Name" class="contact__input">
+                    <input type="mail" placeholder="Email" class="contact__input">
+                    <textarea name="" id="" cols="0" rows="10" placeholder="Description" class="contact__input"></textarea>
+                    <input type="button" value="Submit" class="contact__button button">
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <!--===== FOOTER =====-->
+    <footer class="footer">
+        <p class="footer__title">Marlon</p>
+        <div class="footer__social">
+            <a href="#" class="footer__icon"><i class='bx bxl-facebook' ></i></a>
+            <a href="#" class="footer__icon"><i class='bx bxl-instagram' ></i></a>
+            <a href="#" class="footer__icon"><i class='bx bxl-twitter' ></i></a>
+        </div>
+        <p class="footer__copy">&#169; Bedimcode. All rigths reserved</p>
+    </footer>
+
+
+    <!--===== SCROLL REVEAL =====-->
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+    <!--===== MAIN JS =====-->
+    <script src="assets/js/main.js"></script>
+</body>
 
 </html>
